@@ -14,6 +14,32 @@
     <!-- Add gallery items to this list -->
     <ul class="gallery"></ul>
 
+    <script 
+      src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.11.0/simple-lightbox.min.js" 
+      integrity="sha512-6MY1+N+yqKr8NaWCd7SsFAavdwAnxKihOP2BI0MnU+k8khGU+op83TxJE7dYj0o2mmtfDbRs7U1jAmAeEOjUnw==" 
+      crossorigin="anonymous" 
+      referrerpolicy="no-referrer"></script>
     <script src="js/02-lightbox.js" type="module"></script>
   </body>
 </html>
+
+
+<div class="gallery__item">
+  <a class="gallery__link" href="${item.original}">
+      <img
+          class="gallery__image"
+          src="${item.preview}"
+          data-source="${item.original}"
+          alt="${item.description}"
+      />
+  </a>
+</div>
+
+
+<a class="gallery__item" href="large-image.jpg">
+  <img 
+      class="gallery__image" 
+      src="small-image.jpg" 
+      alt="Image description" 
+  />
+</a>
